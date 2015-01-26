@@ -13,11 +13,14 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 - 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
+
 ### read the features file to get the labels to further produce the variable names:
 - 'features.txt': List of all features.
+
 ### read the files including the subjects:
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 - 'test/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
 ### read the file associating the activity to the y value:
 - 'activity_labels.txt': Links the class labels with their activity name.
 
@@ -25,6 +28,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Combining all data frame to build the full.data.frame containing all the information and data of interest
 but before extracting the mean and standard deviation for each measurement, it labels/associates the variables names to the data sets columns to make manipulations clearer.
 Steps are the following:
+
 1. combine the test and train data subsets for x, y and subjects 
 2. clean the labels names to create variable names matching the R identifiers conventions by removing parenthesis, and replacing commas and hyphens by points
 3. add variable names to the merged x dataset 
@@ -34,5 +38,6 @@ Steps are the following:
 7. remove the activity id column to clean the coming dataset of recurring information
 
 ## tidy data set production:
+
 8. Create a tidy data set with the average of each variable for each activity and each subject.
 9. save the tidy dataset to tidydataset.txt using write.table() with row.name=FALSE 
