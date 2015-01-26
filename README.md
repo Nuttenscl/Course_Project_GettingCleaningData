@@ -1,9 +1,12 @@
-This repository countain the script to produce a tidy data set from the raw data taken from the Human Activity Recognition Using Smartphones Data Set that can be found here:
+In this repository you will find the script to produce a tidy data set from the raw data taken from the "Human Activity Recognition Using Smartphones Data Set" that can be found here:
 [Raw data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-In order to produce a tidy dataset gathering the time average all the variables associated to the mean and standard deviation for each raw measurement of this raw dataset, a few steps are necessary and done by the script `run_analysis.R`. The script as to be run in the directory including also the data directory (the "UCI HAR Dataset" folder). 
+To provide really short overview on the dataset, the abstract on the above link states:
+> Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-The description of the raw data can be found either on at the above link or in the downloaded data directory. Here we describe information associated to the production of the tidy data sets.
+The description of this raw data can be found either on at the above link or in the downloaded data directory. Here we describe information on the data associated to the production of the tidy data sets.
+
+In order to produce a tidy dataset gathering the time average all the variables associated to the mean and standard deviation for each raw measurement of this raw dataset, a few steps are necessary and done by the script `run_analysis.R`. The script as to be run in the directory including also the data directory (the "UCI HAR Dataset" folder). 
 
 The description of the all the variables and transformations from raw data can be found in the CodeBook.md file.
 
