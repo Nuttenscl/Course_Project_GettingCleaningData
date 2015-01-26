@@ -1,8 +1,10 @@
 Code Book
 =========
 
+Each row of the tidy dataset correspond to an entry for each activity and each subject while the columns are the average of each of the 81 variables described bellow, except the two first ones that allow to identify the activity and the subject. 
+The raw data are taken from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, and to create the tidy dataset, the time average was taken of all the variables associated to the mean and standard deviation for each raw measurement.
 
-Each row of the tidy dataset correspond to an entry for each activity and each subject while the columns are the average of each of the 81 variables described bellow, except the two first ones. This average was taken from thethe two first variables allow to identify the activity and the subject:
+Here you can find the description of the variables in the tidy dataset:
 
 ### "activity" :
 Determine the activity during which the measurement was proceeded.The possible values are:
@@ -15,6 +17,10 @@ Determine the activity during which the measurement was proceeded.The possible v
 
 ### "subject" :         
 Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+
+### Note before describing further variables:
+All variables bellow are normalized and bounded within [-1,1], so no units make sense anymore for them.
 
 ### tBodyAcc.*
 The mean and the standard deviation of the body acceleration signals, for the 3 directions taken from the accelerometer
