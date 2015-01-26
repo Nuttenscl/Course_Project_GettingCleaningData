@@ -1,7 +1,7 @@
 Code Book
 =========
 
-Each row of the tidy dataset correspond to an entry for each activity and each subject while the columns are the average of each of the 81 variables described bellow, except the two first ones that allow to identify the activity and the subject. 
+Each row of the tidy dataset correspond to an entry for each activity and each subject while the columns are the average of each of the 81 variables described below, except the two first ones that allow to identify the activity and the subject. 
 The raw data are taken from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, and to create the tidy dataset, the time average was taken of all the variables associated to the mean and standard deviation for each raw measurement.
 
 Here you can find the description of the variables in the tidy dataset:
@@ -13,23 +13,23 @@ Determine the activity during which the measurement was proceeded.The possible v
 - WALKING_DOWNSTAIRS
 - SITTING
 - STANDING
-- LAYING   
+- LAYING
 
 ### "subject" :         
 Identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 
 ### Note before describing further variables:
-All variables bellow are normalized and bounded within [-1,1], so no units make sense anymore for them.
+All variables below are normalized and bounded within [-1,1], so no units make sense anymore for them.
 
 ### tBodyAcc.*
 The mean and the standard deviation of the body acceleration signals, for the 3 directions taken from the accelerometer
-- "tBodyAcc.mean.X"  
-- "tBodyAcc.mean.Y"             
-- "tBodyAcc.mean.Z"              
-- "tBodyAcc.std.X"               
-- "tBodyAcc.std.Y"               
-- "tBodyAcc.std.Z"  
+- "tBodyAcc.mean.X"
+- "tBodyAcc.mean.Y"
+- "tBodyAcc.mean.Z"
+- "tBodyAcc.std.X"
+- "tBodyAcc.std.Y"
+- "tBodyAcc.std.Z"
 
 ### tGravityAcc.*
 The mean and the standard deviation of the gravity acceleration signals, for the 3 directions taken from the accelerometer. 
